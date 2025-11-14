@@ -115,5 +115,6 @@ ros2 run my_robot diff_drive_smooth
 ---
 
 ## 👩‍💻 Author
-**Batool Aloran — AI & Data Science Student**  
+**Batool Aloran — AI & Data Science Student** 
+**Zaina Laham — AI & Data Science Student** 
 The Hashemite University — ROS Course Project
