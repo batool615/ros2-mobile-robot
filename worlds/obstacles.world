@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="obstacles_world">
+    <include><uri>model://ground_plane</uri></include>
+    <include><uri>model://sun</uri></include>
+
+    <!-- صندوق 1 -->
+    <model name="box1">
+      <pose>2 0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col">
+          <geometry><box><size>1 1 1</size></box></geometry>
+        </collision>
+        <visual name="vis">
+          <geometry><box><size>1 1 1</size></box></geometry>
+          <material><ambient>0.2 0.6 0.2 1</ambient></material>
+        </visual>
+      </link>
+      <static>true</static>
+    </model>
+
+    <!-- صندوق 2 -->
+    <model name="box2">
+      <pose>0 2 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>1 2 1</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>1 2 1</size></box></geometry></visual>
+      </link>
+      <static>true</static>
+    </model>
+
+    <!-- جدار بسيط -->
+    <model name="wall">
+      <pose>-2 0 1 0 0 0</pose>
+      <link name="link">
+        <collision name="col"><geometry><box><size>0.2 4 2</size></box></geometry></collision>
+        <visual name="vis"><geometry><box><size>0.2 4 2</size></box></geometry></visual>
+      </link>
+      <static>true</static>
+    </model>
+  </world>
+</sdf>
+

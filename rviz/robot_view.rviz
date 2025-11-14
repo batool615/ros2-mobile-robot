@@ -1,0 +1,38 @@
+Panels:
+- Class: rviz_common/Displays
+  Name: Displays
+- Class: rviz_common/Selection
+  Name: Selection
+- Class: rviz_common/Tool Properties
+  Name: Tool Properties
+- Class: rviz_common/Views
+  Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+  - Class: rviz_default_plugins/Grid
+    Enabled: true
+    Name: Grid
+  - Class: rviz_default_plugins/RobotModel
+    Enabled: true
+    Name: RobotModel
+  - Class: rviz_default_plugins/LaserScan
+    Enabled: true
+    Name: LaserScan
+    Size (Pixels): 3
+    Style: Points
+    Topic:
+      Value: /scan
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: chassis
+  Tools:
+  - Class: rviz_default_plugins/Interact
+  - Class: rviz_default_plugins/MoveCamera
+  - Class: rviz_default_plugins/Select
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 5
+      Pitch: 0.5
+      Yaw: 0.5

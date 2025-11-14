@@ -1,0 +1,49 @@
+
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="maze_world">
+    <include><uri>model://ground_plane</uri></include>
+    <include><uri>model://sun</uri></include>
+
+    <!-- جدران المتاهة: صناديق طويلة رفيعة -->
+    <!-- ممر أفقي علوي -->
+    <model name="w1"><pose>0 3 1 0 0 0</pose><link name="l">
+      <collision name="c"><geometry><box><size>8 0.2 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>8 0.2 2</size></box></geometry></visual>
+    </link><static>true</static></model>
+
+    <!-- ممر أفقي سفلي -->
+    <model name="w2"><pose>0 -3 1 0 0 0</pose><link name="l">
+      <collision name="c"><geometry><box><size>8 0.2 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>8 0.2 2</size></box></geometry></visual>
+    </link><static>true</static></model>
+
+    <!-- جدار يسار -->
+    <model name="w3"><pose>-4 0 1 0 0 0</pose><link name="l">
+      <collision name="c"><geometry><box><size>0.2 6 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>0.2 6 2</size></box></geometry></visual>
+    </link><static>true</static></model>
+
+    <!-- جدار يمين -->
+    <model name="w4"><pose>4 0 1 0 0 0</pose><link name="l">
+      <collision name="c"><geometry><box><size>0.2 6 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>0.2 6 2</size></box></geometry></visual>
+    </link><static>true</static></model>
+
+    <!-- حواجز داخلية تصنع متاهة بسيطة -->
+    <model name="w5"><pose>-2 1.5 1 0 0 0</pose><link name="l">
+      <collision name="c"><geometry><box><size>4 0.2 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>4 0.2 2</size></box></geometry></visual>
+    </link><static>true</static></model>
+
+    <model name="w6"><pose> 2 -1.5 1 0 0 0</pose><link name="l">
+      <collision name="c"><geometry><box><size>4 0.2 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>4 0.2 2</size></box></geometry></visual>
+    </link><static>true</static></model>
+
+    <model name="w7"><pose>0 0 1 0 0 0</pose><link name="l">
+      <collision name="c"><geometry><box><size>0.2 3.0 2</size></box></geometry></collision>
+      <visual name="v"><geometry><box><size>0.2 3.0 2</size></box></geometry></visual>
+    </link><static>true</static></model>
+  </world>
+</sdf>
